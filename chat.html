@@ -33,59 +33,49 @@
       <!-- Perfil da pessoa online-->
       <div id="profile">
         <div id="profile-wrap" class="wrap">
+            <img id="profile-img" src="img/avatar.svg" class="online" alt="avatar" />
             <p>Mike Ross</p>
-            <div id="status-options">
-              <ul>
-                <li id="status-online" class="active"><span class="status-circle"></span>
-                  <p>Online</p>
-                </li>
-                <li id="status-away"><span class="status-circle"></span>
-                  <p>Away</p>
-                </li>
-                <li id="status-busy"><span class="status-circle"></span>
-                  <p>Busy</p>
-                </li>
-                <li id="status-offline"><span class="status-circle"></span>
-                  <p>Offline</p>
-                </li>
-              </ul>
-            </div>
         </div>
-      </div>
-      <div id="search">
-        <label for=""><i class="fa fa-search" aria-hidden="true"></i></label>
-        <input type="text" placeholder="Search contacts..." />
       </div>
 
       <!-- Lista de users -->
       <div id="contacts">
-        <ul>
+        <ul id="contacts-wrap">
           <li class="contact">
+              
             <div class="wrap">
-              <span class="contact-status online"></span>
-              <img src="http://emilcarlsson.se/assets/louislitt.png" alt="" />
+                <img class ="meta" src="img/avatar.svg" alt="avatar" />
               <div class="meta">
-                <p class="name">Louis Litt</p>
-                <p class="preview">You just got LITT up, Mike.</p>
+                  
+                <p >Louis Litt</p>      
               </div>
             </div>
           </li>
         </ul>
       </div>
-
+      <div id="bottom-bar">
+          <button ><span></span></button>
+          <button id="sairBtn"><span>Sair</span></button>
+        </div>
     </div>
     <div class="content">
 
       <!-- Chat -->
       <div class="contact-profile">
-        <p></p>
+        <p>Audiências</p>
       </div>
       <div class="messages">
+        <ul id="messages-wrap">
+            <p class="text sent">Mike</p>´
+            <li class="sent"><p>dasdsasdsadsa</p></li>
+            <p class="text replies">Louis</p>
+            <li class="replies"><p>Arroz</p></li>
+        </ul>
       </div>
-      <div class="message-input">
+      <div id="messageInput" class="message-input">
         <div class="wrap">
-          <input type="text" placeholder="Escreva a sua mensagem..." />
-          <button class="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+          <input id="input-wrap" type="text" placeholder="Escreva a sua mensagem..." />
+          <button id="messageBtn" class="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
         </div>
       </div>
     </div>

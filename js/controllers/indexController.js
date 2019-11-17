@@ -1,15 +1,17 @@
 window.onload = () => {
 
-  document.getElementById("btn").addEventListener("click", e => { postUser(e) });
+  const nicknameInput = document.getElementById("nicknameInput");
+
+  document.getElementById("btnLogin").addEventListener("click", e => { postUser(e, nicknameInput) });
+  document.getElementById("btnAnonymous").addEventListener("click", e => { seeAnonymously(e) });
   
 }
 
-async function postUser(e) {
+async function postUser(e, nicknameInput) {
   e.preventDefault();
-
+  console.log(nicknameInput.value)
   let data = {};
-  data.nickname = document.getElementById("nickname").value;
-
+  data.nickname = nicknameInput.value;
   //const proxyUrl = 'https://cors-anywhere.herokuapp.com/',
   targetUrl = 'http://localhost:8081/user';
   try {
@@ -24,12 +26,20 @@ async function postUser(e) {
     console.log(res);
     if(res.status == 200) {
       let response = await res.json();
-      console.log(response);
-
-      location.href = "file:///C:/dev/SD/frontEnd/chat.html";
+      alert(response.id);
+      nicknameInput.value = "";
+      localStorage.setItem("loggedUser", response.id);
+      localStorage.getItem("loggedUser");
+      location.href = "http://localhost:5500/chat.html";
     }
 
   } catch(error) {
     console.log(error);
   }
+}
+
+function seeAnonymously(e) {
+  e.preventDefault();
+  alert("anonymously")
+  location.href = "http://localhost:5500/chat.html";
 }

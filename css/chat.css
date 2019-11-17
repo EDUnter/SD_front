@@ -1,10 +1,7 @@
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
-  background: #27ae60;
-  font-family: "proxima-nova", "Source Sans Pro", sans-serif;
+  background: #38d39f;
+  font-family: 'Poppins', sans-serif;
   font-size: 1em;
   letter-spacing: 0.1px;
   color: #32465a;
@@ -14,19 +11,17 @@ body {
 }
 
 #frame {
-  width: 95%;
+  width: 100%;
   min-width: 360px;
-  max-width: 1000px;
-  height: 92vh;
+  height: 100%;
   min-height: 300px;
-  max-height: 720px;
   background: #E6EAEA;
 }
 
 @media screen and (max-width: 360px) {
   #frame {
     width: 100%;
-    height: 100vh;
+    height: 100%;
   }
 }
 
@@ -36,7 +31,7 @@ body {
   max-width: 340px;
   width: 40%;
   height: 100%;
-  background: #2c3e50;
+  background: #38d39f;
   color: #f5f5f5;
   overflow: hidden;
   position: relative;
@@ -59,7 +54,7 @@ body {
     width: 100%;
     margin: 0 auto;
     padding: 5px 0 0 0;
-    background: #32465a;
+    background: #38d39f;
   }
 }
 
@@ -150,7 +145,7 @@ body {
   margin-top: 23px;
   font-size: 0.8em;
   cursor: pointer;
-  color: #435f7a;
+  color: #38d39f;
 }
 
 @media screen and (max-width: 735px) {
@@ -168,7 +163,7 @@ body {
   border-radius: 6px;
   z-index: 99;
   line-height: initial;
-  background: #435f7a;
+  background: #38d39f;
   -moz-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
   -webkit-transition: 0.3s all ease;
@@ -201,7 +196,7 @@ body {
   height: 0;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-bottom: 8px solid #435f7a;
+  border-bottom: 8px solid #38d39f;
   margin: -8px 0 0 24px;
 }
 
@@ -229,7 +224,7 @@ body {
 }
 
 #frame #sidepanel #profile .wrap #status-options ul li:hover {
-  background: #496886;
+  background: #38d39f;
 }
 
 #frame #sidepanel #profile .wrap #status-options ul li span.status-circle {
@@ -323,7 +318,7 @@ body {
 #frame #sidepanel #profile .wrap #expanded input {
   border: none;
   margin-bottom: 6px;
-  background: #32465a;
+  background: #38d39f;
   border-radius: 3px;
   color: #f5f5f5;
   padding: 7px;
@@ -332,12 +327,12 @@ body {
 
 #frame #sidepanel #profile .wrap #expanded input:focus {
   outline: none;
-  background: #435f7a;
+  background: #38d39f;
 }
 
 #frame #sidepanel #search {
-  border-top: 1px solid #32465a;
-  border-bottom: 1px solid #32465a;
+  border-top: 1px solid #38d39f;
+  border-bottom: 1px solid ;
   font-weight: 300;
 }
 
@@ -357,13 +352,13 @@ body {
   padding: 10px 0 10px 46px;
   width: calc(100% - 25px);
   border: none;
-  background: #32465a;
+  background: #38d39f;
   color: #f5f5f5;
 }
 
 #frame #sidepanel #search input:focus {
   outline: none;
-  background: #435f7a;
+  background: #38d39f;
 }
 
 #frame #sidepanel #search input::-webkit-input-placeholder {
@@ -406,11 +401,11 @@ body {
 
 #frame #sidepanel #contacts::-webkit-scrollbar {
   width: 8px;
-  background: #2c3e50;
+  background: #38d39f;
 }
 
 #frame #sidepanel #contacts::-webkit-scrollbar-thumb {
-  background-color: #243140;
+  background-color: #38d39f;
 }
 
 #frame #sidepanel #contacts ul li.contact {
@@ -427,16 +422,7 @@ body {
 }
 
 #frame #sidepanel #contacts ul li.contact:hover {
-  background: #32465a;
-}
-
-#frame #sidepanel #contacts ul li.contact.active {
-  background: #32465a;
-  border-right: 5px solid #435f7a;
-}
-
-#frame #sidepanel #contacts ul li.contact.active span.contact-status {
-  border: 2px solid #32465a !important;
+  background: #38d39f;
 }
 
 #frame #sidepanel #contacts ul li.contact .wrap {
@@ -458,7 +444,7 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  border: 2px solid #2c3e50;
+  border: 2px solid #38d39f;
   background: #95a5a6;
 }
 
@@ -524,65 +510,13 @@ body {
   opacity: .5;
 }
 
-#frame #sidepanel #bottom-bar {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-}
 
-#frame #sidepanel #bottom-bar button {
-  float: left;
-  border: none;
-  width: 50%;
-  padding: 10px 0;
-  background: #32465a;
-  color: #f5f5f5;
-  cursor: pointer;
-  font-size: 0.85em;
-  font-family: "proxima-nova", "Source Sans Pro", sans-serif;
-}
 
 @media screen and (max-width: 735px) {
   #frame #sidepanel #bottom-bar button {
     float: none;
     width: 100%;
     padding: 15px 0;
-  }
-}
-
-#frame #sidepanel #bottom-bar button:focus {
-  outline: none;
-}
-
-#frame #sidepanel #bottom-bar button:nth-child(1) {
-  border-right: 1px solid #2c3e50;
-}
-
-@media screen and (max-width: 735px) {
-  #frame #sidepanel #bottom-bar button:nth-child(1) {
-    border-right: none;
-    border-bottom: 1px solid #2c3e50;
-  }
-}
-
-#frame #sidepanel #bottom-bar button:hover {
-  background: #435f7a;
-}
-
-#frame #sidepanel #bottom-bar button i {
-  margin-right: 3px;
-  font-size: 1em;
-}
-
-@media screen and (max-width: 735px) {
-  #frame #sidepanel #bottom-bar button i {
-    font-size: 1.3em;
-  }
-}
-
-@media screen and (max-width: 735px) {
-  #frame #sidepanel #bottom-bar button span {
-    display: none;
   }
 }
 
@@ -622,24 +556,26 @@ body {
 }
 
 #frame .content .contact-profile p {
-  float: left;
+  text-align: center;
+  font-size: 2em;
+  color: #38d39f;
 }
 
 #frame .content .contact-profile .social-media {
   float: right;
 }
 
-#frame .content .contact-profile .social-media i {
+#frame .content .contact-profile .social-media btn {
   margin-left: 14px;
   cursor: pointer;
 }
 
-#frame .content .contact-profile .social-media i:nth-last-child(1) {
+#frame .content .contact-profile .social-media btn:nth-last-child(1) {
   margin-right: 20px;
 }
 
-#frame .content .contact-profile .social-media i:hover {
-  color: #435f7a;
+#frame .content .contact-profile .social-media btn:hover {
+  color: #38d39f;
 }
 
 #frame .content .messages {
@@ -683,9 +619,27 @@ body {
 }
 
 #frame .content .messages ul li.sent p {
-  background: #435f7a;
+  background: #38d39f;
   color: #f5f5f5;
 }
+
+
+#frame .content .messages ul p.text.sent {
+  margin: 15px 0px 0px 15px;
+  width: calc(100% - 50px);
+  font-size: 1.2em;
+  float: left;
+  color: #38d39f;
+}
+
+#frame .content .messages ul p.text.replies {
+  margin: 15px 0px 0px 15px;
+  width: 60px;
+  font-size: 1.2em;
+  float: right;
+  color: #32465a;
+}
+
 
 #frame .content .messages ul li.replies img {
   float: right;
@@ -732,10 +686,11 @@ body {
   font-family: "proxima-nova", "Source Sans Pro", sans-serif;
   float: left;
   border: none;
-  width: calc(100% - 90px);
+  height: 50px;
+  width: calc(100% - 50px);
   padding: 11px 32px 10px 8px;
   font-size: 0.8em;
-  color: #32465a;
+  color: #38d39f;
 }
 
 @media screen and (max-width: 735px) {
@@ -754,7 +709,7 @@ body {
   z-index: 4;
   margin-top: 10px;
   font-size: 1.1em;
-  color: #435f7a;
+  color: #38d39f;
   opacity: .5;
   cursor: pointer;
 }
@@ -773,10 +728,11 @@ body {
 #frame .content .message-input .wrap button {
   float: right;
   border: none;
+  height: 50px;
   width: 50px;
   padding: 12px 0;
   cursor: pointer;
-  background: #32465a;
+  background: #38d39f;
   color: #f5f5f5;
 }
 
@@ -787,9 +743,69 @@ body {
 }
 
 #frame .content .message-input .wrap button:hover {
-  background: #435f7a;
+  background: #38d39f;
 }
 
 #frame .content .message-input .wrap button:focus {
   outline: none;
+}
+
+#frame .content .contact-profile {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background: #f5f5f5;
+}
+
+#frame #sidepanel #bottom-bar {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+#frame #sidepanel #bottom-bar button {
+  float: left;
+  border: none;
+  width: 50%;
+  padding: 10px 0;
+  background: #38d39f;
+  color: #f5f5f5;
+  cursor: pointer;
+  font-size: 0.85em;
+  font-family: "proxima-nova",  "Source Sans Pro", sans-serif;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #bottom-bar button {
+    float: none;
+    width: 100%;
+  }
+}
+#frame #sidepanel #bottom-bar button:focus {
+  outline: none;
+}
+#frame #sidepanel #bottom-bar button:nth-child(1) {
+  border-right: 1px solid #38d39f;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #bottom-bar button:nth-child(1) {
+    border-right: none;
+    border-bottom: 1px solid #38d39f;
+  }
+}
+#frame #sidepanel #bottom-bar button:hover {
+  background: #55c684;
+}
+#frame #sidepanel #bottom-bar button i {
+  margin-right: 3px;
+  font-size: 1em;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #bottom-bar button i {
+    font-size: 1.3em;
+  }
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #bottom-bar button span {
+    display: none;
+  }
+
 }
