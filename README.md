@@ -21,4 +21,4 @@ The Java Chat Client is a graphical interface designed to seamlessly interact wi
 
 ## License
 
-This project is unde the MIT license. Open [LICENSE](LICENSE.md) archive to get more info
+This project is unde the MIT license. Open [LICENSE](LICENSE) archive to get more info
